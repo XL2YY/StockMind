@@ -164,11 +164,13 @@ stockmind pro 159246 --alert 1.02
 ### 购买方式
 
 **方式一：闲鱼下单（推荐）**
-> 闲鱼搜索 **"StockMind AI股票分析"** 或扫描下方二维码
+> 闲鱼搜索用户 **"下了一夜雨"** 或直接扫码下单
 > 下单后自动发货，含完整安装包 + 激活码
+>
+> 👉 [点此打开闲鱼链接](https://m.tb.cn/h.xxxxx)（或闲鱼搜索用户"下了一夜雨"）
 
-**方式二：微信/支付宝转账**
-> 添加微信 `stockmind_pro`（备注"购买Pro"）
+**方式二：QQ联系**
+> 添加QQ **569105447**（备注"购买StockMind"）
 > 付款后24小时内发送激活码
 
 ### 激活方式
@@ -229,6 +231,6 @@ StockMind/
 
 **如果 StockMind 帮到了你，不妨 ⭐️ Star 支持一下！**
 
-[购买Pro版](#-购买pro版) · [提交Issue](https://github.com/yourname/stockmind/issues) · [联系作者](mailto:stockmind@example.com)
+[购买Pro版](#-购买pro版) · [提交Issue](https://github.com/XL2YY/StockMind/issues) · [联系作者](mailto:569105447@qq.com)
 
 </div>
