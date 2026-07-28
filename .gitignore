@@ -1,0 +1,15 @@
+# StockMind .gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+.env
+*.key
+~/.stockmind/
+portfolio.json
+alerts.json
+push_config.json
