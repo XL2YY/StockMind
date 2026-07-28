@@ -13,3 +13,6 @@ build/
 portfolio.json
 alerts.json
 push_config.json
+
+# 内部文档（不公开）
+docs/xianyu_sell.txt
