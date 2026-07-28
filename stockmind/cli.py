@@ -168,6 +168,17 @@ def cmd_compare(args):
     print(wl.format_compare(codes))
 
 
+def cmd_activate(args):
+    """激活Pro版"""
+    from pathlib import Path
+    lic_dir = Path.home() / ".stockmind"
+    lic_dir.mkdir(parents=True, exist_ok=True)
+    lic_file = lic_dir / "license.key"
+    lic_file.write_text(args.key.strip(), encoding="utf-8")
+    print("[StockMind] Pro版激活成功！激活码: %s" % args.key[:20] + "...")
+    print("[StockMind] 现在可以使用 stockmind pro <代码> 体验完整功能")
+
+
 def cmd_hot():
     """热门扫描"""
     try:
@@ -203,6 +214,7 @@ def main():
         print("  stockmind watchlist analyze        批量分析自选股")
         print("  stockmind compare <A> <B> [C..]    多股对比")
         print("  stockmind hot                      热门股票扫描")
+        print("  stockmind activate <激活码>         激活Pro版")
         print("")
         print("示例:")
         print("  stockmind 159246           # 分析创业板人工智能ETF")
@@ -245,6 +257,18 @@ def main():
         args = Args()
         args.codes = codes
         cmd_compare(args)
+        return
+
+    # activate
+    if sys.argv[1] == "activate":
+        if len(sys.argv) < 3:
+            print("用法: stockmind activate <激活码>")
+            print("示例: stockmind activate SM-6127D078-853B8F44-8BDF56D5")
+            return
+        class Args: pass
+        args = Args()
+        args.key = sys.argv[2]
+        cmd_activate(args)
         return
 
     # hot
