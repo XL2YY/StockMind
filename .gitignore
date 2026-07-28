@@ -16,3 +16,6 @@ push_config.json
 
 # 内部文档（不公开）
 docs/xianyu_sell.txt
+
+# Pro版（仅本地，购买后发送）
+stockmind/pro/
